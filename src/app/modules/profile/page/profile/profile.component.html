@@ -1,0 +1,67 @@
+<section class="profile mb-5">
+  <div class="container">
+    <h3 class="mt-5 mb-4 text-primary">User Profile</h3>
+
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <figure class="mb-3">
+          <img src="./assets/images/user.jpg" alt="" class="img-fluid">
+        </figure>
+
+        <div class="form-group mt-4 d-flex justify-content-between">
+          <button class="btn btn-lg btn-warning mr-4" (click)="openRegisterModel(currentUser?.id)">Edit Photo</button>
+          <button class="btn btn-lg btn-warning" (click)="openRegisterModel(currentUser?.id)">Edit Profile</button>
+        </div>
+
+      </div>
+      <div class="col-12 col-lg-8 pl-3 pl-lg-5">
+
+        <table class="table border h5 text-dark line-height-26">
+          <tr>
+            <td>Name</td>
+            <td>
+              {{currentUser?.firstName}}
+              {{currentUser?.lastName}}
+            </td>
+          </tr>
+          <tr>
+            <td> Age </td>
+            <td>{{currentUser?.age}}</td>
+          </tr>
+          <tr>
+            <td> Email </td>
+            <td>{{currentUser?.email}}</td>
+          </tr>
+          <tr>
+            <td> Contact No. </td>
+            <td>{{currentUser?.phone}}</td>
+          </tr>
+          <tr>
+            <td> Address </td>
+            <td>{{currentUser?.addressDetails.address}} : {{currentUser?.addressDetails.address1}}
+              {{currentUser?.addressDetails.address2}} , {{currentUser?.addressDetails.state}} ,
+              {{currentUser?.country}}</td>
+          </tr>
+          <tr>
+            <td> Interest </td>
+            <td>{{currentUser?.interest}}</td>
+          </tr>
+        </table>
+
+        <!-- <p class="h5 text-dark line-height-26">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+          <a href="javascript:void(0)" class="text-primary">standard dummy text</a> ever since the 1500s, when an
+          unknown printer took a galley of type and scrambled it to
+          make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+          sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+          PageMaker including versions of Lorem Ipsum.
+        </p> -->
+
+        <div class="form-group mt-4">
+          <button type="submit" class="btn btn-lg btn-success">I Agree</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,349 @@
+/**** Reset Css ****/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset Css Ends */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "VarelaRoundRegular";
+}
+
+/* CSS universal selectors Ends */
+
+@font-face {
+  font-family: "VarelaRoundRegular";
+  src: url("./assets/fonts/VarelaRoundRegular.eot");
+  src: url("./assets/fonts/VarelaRoundRegular.eot") format("embedded-opentype"),
+    url("./assets/fonts/VarelaRoundRegular.woff2") format("woff2"),
+    url("./assets/fonts/VarelaRoundRegular.woff") format("woff"),
+    url("./assets/fonts/VarelaRoundRegular.ttf") format("truetype"),
+    url("./assets/fonts/VarelaRoundRegular.svg#VarelaRoundRegular") format("svg");
+}
+
+/* Fonts Css Ends */
+
+/* font size */
+.h1,
+h1 {
+  font-size: 60px;
+}
+
+.h2,
+h2 {
+  font-size: 40px;
+}
+
+.h3,
+h3 {
+  font-size: 30px;
+}
+
+.h4,
+h4 {
+  font-size: 25px;
+}
+
+.h5,
+h5 {
+  font-size: 20px;
+}
+
+.h6,
+h6 {
+  font-size: 14px;
+}
+
+/* Colors */
+.text-dark {
+  color: #656565 !important;
+}
+
+.text-gray {
+  color: #7f7f7f !important;
+}
+
+.text-primary {
+  color: #4acaff !important;
+}
+
+.text-blue-dark {
+  color: #124f70 !important;
+}
+
+/* Background  */
+.bg-dark {
+  background-color: #131c25 !important;
+}
+
+.bg-primary {
+  background-color: #3aa5dc !important;
+}
+
+.bg-transpernt {
+  background-color: transparent !important;
+}
+
+/* Button  */
+
+.btn {
+  border-bottom: 3px solid #000;
+}
+
+.btn-primary {
+  background-color: #4acaff;
+  border-color: #4acaff;
+  border-bottom-color: #3baedd;
+}
+
+.btn-primary:hover {
+  color: #4acaff;
+  border-color: #4acaff;
+  background-color: #fff;
+}
+
+.btn-outline-primary {
+  color: #4acaff;
+  border-color: #4acaff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #4acaff;
+  border-color: #4acaff;
+}
+
+.btn-success {
+  background-color: #49a942;
+  border-bottom: #689550;
+}
+
+.btn-warning {
+  color: #656565;
+  background-color: #ffcc33;
+  border-color: #ffcc33;
+  border-bottom-color: #cc7a00;
+}
+
+/* form-control */
+
+.form-control.ng-invalid.ng-touched {
+  border-color: #d00;
+}
+
+.control-label {
+  position: relative;
+}
+
+.control-label.required:after {
+  color: #d00;
+  content: "*";
+  position: absolute;
+  margin-left: 2px;
+  top: 0;
+}
+
+.form-group-type-two .form-control {
+  background: transparent;
+  border: 2px solid #4acaff;
+  color: #fff;
+}
+
+.custom-checkbox .custom-control-label::before,
+.custom-checkbox .custom-control-label::after {
+  top: 0;
+}
+
+.profile-photo.in-valid {
+  border: 1px solid #d00;
+}
+
+/**** Custom Css ****/
+
+.py-6 {
+  padding: 100px 0;
+}
+
+.line-height-22 {
+  line-height: 22px;
+}
+
+.line-height-26 {
+  line-height: 26px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.section-heading {
+  position: relative;
+}
+
+.section-heading::after {
+  position: absolute;
+  content: "";
+  background: #4acaff;
+  height: 6px;
+  width: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider::after {
+  position: absolute;
+  content: "";
+  background: url("./assets/images/divider.jpg") no-repeat center center / cover;
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+/**** Media Queries Start ****/
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    width: 100px;
+  }
+}

@@ -1,0 +1,53 @@
+<div class="search-job divider">
+  <div class="container w-75 m-auto">
+    <h2 class="mb-4 text-white font-italic">I'm looking for..</h2>
+
+    <form [formGroup]="homeSearchForm" (ngSubmit)="onHomeSearchFormSubmit()">
+      <div class="row mb-4">
+        <div class="col-12 col-lg-9">
+          <div class="form-group mb-0">
+            <input formControlName="jobDescription" class="form-control" placeholder="Enter a Job Description">
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="form-group mb-0">
+            <button type="Search" class="btn btn-primary d-none d-lg-block">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-12 col-lg-6 d-flex align-items-center mb-lg-0 mb-3">
+          <div class="custom-control custom-checkbox d-flex align-items-center mr-5">
+            <input type="checkbox" class="custom-control-input mt-0" id="fullTime" formControlName="fullTime">
+            <label class="custom-control-label text-white" for="fullTime">Full Time</label>
+          </div>
+          <div class="custom-control custom-checkbox d-flex align-items-center">
+            <input type="checkbox" class="custom-control-input mt-0" id="partTime" formControlName="partTime">
+            <label class="custom-control-label text-white" for="partTime">Part Time / Casual / Freelance</label>
+          </div>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="form-group mb-0">
+            <select class="form-control" id="userLocation" formControlName="userLocation">
+              <option value="selectLocation">Select Your location </option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group text-center">
+        <button type="Search" class="btn btn-primary d-inline-block d-lg-none mr-3">Search</button>
+        <button class="btn btn-primary" (click)="openRegisterModel()">Register</button>
+      </div>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<section class="subscribe bg-dark text-center divider py-6">
+  <div class="container">
+    <p class="h5 text-white mb-4">Subscribe to our job Seeker Mailing List</p>
+    <form [formGroup]="subscribeForm" (ngSubmit)="onSubscribeEmailForm()">
+      <div class="form-group form-group-type-two mb-0 col-12 col-lg-4 m-auto">
+        <input formControlName="subscribeEmail" class="form-control mb-2" placeholder="Enter Your Email Address">
+        <small *ngIf="!subscribeForm.get('subscribeEmail')?.valid && subscribeForm.get('subscribeEmail')?.touched"
+          class="h6 text-danger mt-2 d-block text-left">Enter a valid Email</small>
+      </div>
+    </form>
+  </div>
+</section>
